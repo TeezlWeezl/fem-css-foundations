@@ -86,5 +86,5 @@ To get Prettier to work properly I had to add a few configurations in my `settin
 - https://unsplash.com/photos/QJEVpydulGs
 - https://unsplash.com/photos/p5BoBF0XJUA
 
-[fem]: https://frontendmasters.com
-[course]: https://frontendmasters.com/courses/css-foundations/
+## Fonts
+https://fonts.google.com/specimen/Inter?query=inter
