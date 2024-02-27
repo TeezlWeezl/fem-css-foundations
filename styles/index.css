@@ -2,19 +2,15 @@
 
 /* Main Content Section */
 
-.main {
-  padding: 150px;
-}
-
-.main__heading {
+.home .main__heading {
   font-size: 12.8rem;
   font-weight: bold;
 }
 
-.main__sub-heading {
+.home .main__sub-heading {
   font-size: 4rem;
 }
 
-.button:not(button:last-of-type) {
+.home .button:not(button:last-of-type) {
   margin-inline-end: 20px;
 }

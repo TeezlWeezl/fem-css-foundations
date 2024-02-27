@@ -11,6 +11,7 @@
 :root {
   --color-primary: #ff7b54;
   --color-text-on-primary: #ffffff;
+  --color-text-on-secondary: #000000;
 
   --color-button-border: var(--color-text-on-primary);
 
@@ -43,10 +44,18 @@ p {
 }
 
 body {
-  background-color: var(--color-primary);
-  color: var(--color-text-on-primary);
   font-family: var(--font-family);
   font-size: 1.6rem;
+}
+
+.body--primary {
+  background-color: var(--color-primary);
+  color: var(--color-text-on-primary);
+}
+
+.body--secondary {
+  background-color: var(--color-text-on-primary);
+  color: var(--color-primary);
 }
 
 /* Navbar */
@@ -56,7 +65,7 @@ body {
   grid-template-columns: 1fr 3fr 34px;
   grid-template-rows: 1fr;
   align-items: center;
-  padding: 0 60px;
+  padding: 20px 60px;
 }
 
 .header__link {
@@ -84,6 +93,12 @@ body {
 .header__logo {
   grid-area: 1 / 3 / 2 / 4;
   top: 100px;
+}
+
+/* Main container */
+
+.main {
+  padding: 150px;
 }
 
 /* Generic Button Styles */

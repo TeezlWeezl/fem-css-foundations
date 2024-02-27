@@ -1,1 +1,55 @@
 @import './base.css';
+
+.speakers .logo--secondary path {
+  fill: var(--color-primary);
+  stroke: var(--color-primary);
+}
+
+.speakers .main__title {
+  font-size: 9.8rem;
+}
+
+.speakers-container {
+  margin: 90px 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 200px;
+  row-gap: 120px;
+  justify-items: start;
+}
+
+.speaker {
+  max-width: 360px;
+}
+
+.speaker__image {
+  width: 310px;
+  height: 310px;
+  object-fit: cover;
+}
+
+.speaker__image--top {
+  object-position: top;
+}
+
+.speaker__name {
+  margin-top: 36px;
+  font-size: 3rem;
+}
+
+.speaker__company {
+  margin-top: 20px;
+  font-size: 1.8rem;
+  color: var(--color-text-on-secondary);
+}
+
+.speaker__bio {
+  margin-top: 32px;
+  color: var(--color-text-on-secondary);
+}
+
+@media (width < 850px) {
+  .speakers-container {
+    grid-template-columns: 1fr;
+  }
+}
