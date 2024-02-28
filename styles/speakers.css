@@ -1,5 +1,9 @@
 @import './base.css';
 
+.nav {
+  background: var(--color-text-on-primary);
+}
+
 .speakers .logo--secondary path {
   fill: var(--color-primary);
   stroke: var(--color-primary);

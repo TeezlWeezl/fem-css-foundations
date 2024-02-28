@@ -22,18 +22,20 @@
 }
 
 @media (width < 700px) {
-  .home .header__burger-menu {
+  .home .header__burger-menu,
+  .home .header__close-menu {
     stroke: var(--color-text-on-primary);
   }
 
-  .home .header__burger-menu path {
+  .home .header__burger-menu path,
+  .home .header__close-menu path {
     fill: var(--color-text-on-primary);
   }
 }
 
 @media (width < 550px) {
   .home .main__heading {
-    font-size: 40px;
+    font-size: 4rem;
   }
 
   .home .main__sub-heading {
