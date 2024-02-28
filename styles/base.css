@@ -62,7 +62,7 @@ body {
 
 .header {
   display: grid;
-  grid-template-columns: 1fr 3fr 34px;
+  grid-template-columns: auto 1fr auto;
   grid-template-rows: 1fr;
   align-items: center;
   padding: 20px 60px;
@@ -71,7 +71,11 @@ body {
 .header__link {
   font-weight: bold;
   font-size: 4rem;
-  grid-area: 1 / 1 / 2 / 6;
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+.header__burger-menu {
+  display: none;
 }
 
 .nav {
@@ -134,4 +138,50 @@ body {
 
 .button__icon {
   vertical-align: middle;
+}
+
+@media (width < 1220px) {
+  .button {
+    font-size: 2.4rem;
+    padding: 0 32px;
+    height: 70px;
+  }
+
+  .button__icon {
+    width: 20px;
+  }
+}
+
+@media (width < 850px) {
+  .main {
+    padding: 75px;
+  }
+}
+
+@media (width < 700px) {
+  .button {
+    font-size: 1.6rem;
+  }
+
+  .button-container {
+    margin-top: 48px;
+    flex-direction: column;
+    width: fit-content;
+    row-gap: 20px;
+  }
+
+  .header__burger-menu {
+    display: block;
+    grid-area: 1 / 1 / 2 / 2;
+  }
+
+  .header__link {
+    grid-area: 1 / 2 / 2 / 3;
+    font-size: 3rem;
+    justify-self: center;
+  }
+
+  .nav {
+    display: none;
+  }
 }
